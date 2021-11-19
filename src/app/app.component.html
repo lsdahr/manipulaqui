@@ -1,0 +1,62 @@
+<div *ngIf="authService.authError" style="padding:10px; background-color:rgb(212, 63, 63); color:white">
+  {{ authService.authError }}
+</div>
+
+<div class="sucess-auth" *ngIf="authService.user | async">
+  <app-navbar></app-navbar>
+
+  Logado como <b>{{ (authService.user | async)?.email }}</b>
+
+  <button (click)="logout()">Sair</button>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<div class="text-center">
+  <div *ngIf="!(authService.user | async)">
+    <div class="container-fluid" style="padding:50px">
+      <img
+        class="logo"
+        src="https://i.postimg.cc/NFP7T18x/manippulaqui-logo.png"
+        alt="logo manipulaqui"
+      />
+
+      <div class="form-floating modal-body">
+        <input
+          class="loginbox"
+          type="text"
+          id="floatingInput"
+          [(ngModel)]="email"
+          placeholder="Login"
+        />
+
+        <div class="form-floating modal-body">
+          <input
+            class="loginbox"
+            type="password"
+            [(ngModel)]="password"
+            id="floatingPassword"
+            placeholder="Senha"
+          />
+        </div>
+
+        <div class="rememberbox">
+          <label>
+            <input type="checkbox" class="cbox" value="remember-me" />
+            Lembrar-me
+          </label>
+        </div>
+        <div class="form-floating modal-body">
+          <small style="font-size:0.9rem">
+            <button class="btn-logar" (click)="loginE()">Entrar</button>
+            <button class="btn-logarg" (click)="loginG()">
+              Entrar com Gmail
+            </button>
+
+            <!-- front99@email.com 123456 -->
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

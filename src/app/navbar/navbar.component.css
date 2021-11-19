@@ -1,0 +1,11 @@
+.logo {
+  width: 5em;
+}
+
+.navbar-light a {
+  color: #ffffff;
+}
+
+.navbar-light a:hover {
+  color: rgb(245, 243, 243);
+}

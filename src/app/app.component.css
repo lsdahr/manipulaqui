@@ -1,0 +1,70 @@
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 15%;
+  margin: 10px;
+}
+
+.btn-logar {
+  width: 180px;
+  border: 1.5px solid #63c6e0;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #63c6e0;
+  background-color: rgb(255, 255, 255);
+  margin: 1%;
+}
+
+.btn-logar:hover {
+  color: #fff;
+  background-color: #63c6e0;
+}
+
+.btn-logarg {
+  width: 180px;
+  border: 1.5px solid #d14242;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #d14242;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-logarg:hover {
+  color: #fff;
+  background-color: #d14242;
+}
+.loginbox {
+  outline: none !important;
+  border: none;
+  box-shadow: 0 0 2px #63c6e0;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.loginbox::placeholder {
+  color: #a7a5a5;
+  padding: 5px;
+}
+
+.loginbox:focus {
+  border: 1px solid #63c6e0;
+
+  color: #63c6e0;
+}
+.cbox {
+  vertical-align: middle;
+}
+
+.text-center {
+  padding: 30px;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 40%;
+  }
+}

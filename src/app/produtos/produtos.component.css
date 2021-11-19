@@ -1,0 +1,12 @@
+#table {
+  text-align: center;
+}
+.titlep {
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.8);
+  margin-top: 5%;
+  color: white;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
